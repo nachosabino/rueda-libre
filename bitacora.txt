@@ -1,0 +1,1 @@
+Se crea el repositotio en git hub y todas las carpetas para guardar la bitacora y hacer el commit desde el local hasta github
