@@ -1,1 +1,4 @@
 Se crea el repositotio en git hub y todas las carpetas para guardar la bitacora y hacer el commit desde el local hasta github
+se crean paginas abyacentes, como la de reserva y ruta, así mismo se agrega imagen
+se colocan los links, con la finalidad de que las paginas queden entreconectadas. 
+se crea la pagina de css y se empiezan a crear los roots. 

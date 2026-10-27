@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #83301e;
+    --secondary-color: #C70039;
+    --background-color: #F0F0F0;
+    --text-color: #333333;
+    --font-family: "Buenard", Arial, sans-serif;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    height: 80px;
+
+   
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin: 7px;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+     gap: clamp(6px, 1.5vw, 20px);
+
+     border: 3px solid white;
+    border-radius: 30px;
+    
+    
+}
+
+.nav-links li {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-family);
+    font-size: 18px;
+    list-style-type: none;
+    font-size: clamp(18px, 1.2vw, 24px);
+    white-space: nowrap;
+}
+
+/* .header{
+    margin: 1px solid black;
+    padding: 5px;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 50px;
+    display: grid;
+    justify-content: space-between;
+}
+
+/* {     position:sticky;
+    top: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 25px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    align-items: flex-start;
+    Display: flex;
+    font-family: var(--font-family);
+} */
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.navbar >div
+{
+    display: flex;
+    align-items: center;
+}
+
+
+.logo{
+    width: 50px;
+    height: auto;
+    margin: 1px auto;
+    border-radius: 50%;
+    margin: 20px;
+   object-fit: contain;
+    top: 0;
+    left: 2%;
+    border: 1px solid var(--background-color);
+
+    
+}
+
+.navbar h1 { 
+    font-family: "Buenard", Arial, sans-serif;
+    flex-wrap:nowrap
+
+    
+}
+
+.recorrido {
+    
+    height: auto;
+    width: 100%;
+}
