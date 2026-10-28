@@ -2,3 +2,7 @@ Se crea el repositotio en git hub y todas las carpetas para guardar la bitacora 
 se crean paginas abyacentes, como la de reserva y ruta, así mismo se agrega imagen
 se colocan los links, con la finalidad de que las paginas queden entreconectadas. 
 se crea la pagina de css y se empiezan a crear los roots. 
+La navbar estaba presentado el contenido en orden descendente, se jugó con la alineación del texto, así como se hicieron dos 2 para encerrar los contenidos, 1 para el logo y el titulo y otro para los botones.
+La navbar presentaba inconvenientes que no lo dejaban fijo arriba y superpuesta sobre los otros elementos. con el comando navbar >div, se puso que fuera flex y luego en el .navbar se colocó con un z-index: para que estubiera por encima de todo. 
+la foto de fondo al intentar encerrarla en una sectión se sobre ponia sobre la navbar, por lo que se tomó el ".principal" y se le puso que fuera abosuluto en la posición, para que este contenido me lo muestre por detras como background. 
+se hacer un "*" para que la pagina no tenga margen, afectando esto a todo el contenido
