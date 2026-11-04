@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #83301e;
+    --secondary-color: #C70039;
+    --background-color: #bcbeb6;
+    --text-color: #333333;
+    --font-family: "Buenard", Arial, sans-serif;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+    
+
+.header{
+    display: flex;
+    position: sticky;
+    
+
+}
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 7px;
+    flex-direction: row;
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+
+   
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 15px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+     gap: clamp(6px, 1.5vw, 20px);
+     border: 3px solid white;
+    border-radius: 30px;
+    
+    
+}
+
+.nav-links li {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-family);
+    font-size: 18px;
+    list-style-type: none;
+    font-size: clamp(18px, 1.2vw, 24px);
+    white-space: nowrap;
+}
+
+.navbar >div
+{
+    display: flex;
+    align-items: center;
+}
+
+
+.logo{
+    width: 50px;
+    height: auto;
+    margin: 1px auto;
+    border-radius: 50%;
+    margin: 20px;
+   object-fit: contain;
+    top: 0;
+    left: 2%;
+    border: 1px solid var(--background-color);
+
+    
+}
+
+.navbar h1 { 
+    font-family: "Buenard", Arial, sans-serif;
+    flex-wrap:nowrap
+
+    
+}
+
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin: 20px auto;
+}
+

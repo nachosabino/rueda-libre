@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+i<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1>Rueda-Libre</h1>
+    
 <!-- Icono de la pagina -->
  <link rel="icon" href="../Pie de pagina.jpeg" type="image/jpeg">
+ <link rel="stylesheet" href="Reservas.css">
+    <title>Reserva tu bicicleta</title>
 </head>
 
 <!--Bootstrap CSS -->
@@ -13,73 +15,203 @@
 <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
 
 <body>
-<!-- Barra de navegación con estilo básico -->
-<nav>
-    <ul>
-        
-        <li><a href="../index.html">Inicio</a></li> 
-        <li><a href="Paginas2/reserva.html">Reservas</a></li> 
-        <li><a href="#footer">Contacto</a></li>
-        <li><a href="Paginas2/Rutas.html">Rutas</a></li>
-    </ul>
-
-</nav>
-
-
-
-<!-- contenedor principal de la reserva -->
-<div class="container mt-5">
-  <div class="row g-4 align-items-center">
-
-    <!--Columna izquierda: Formulariio-->
-    <div class=" col-lg-7">
-        <div class="card shadow-sm p-4"
-            <h2 class="mb-4 text-dark" ><strong>Reserva tu bicicleta</strong></h2>
     
-            <form>
-                <div class="mb-3">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
-                </div>
+    <header class="header">
+        <nav class="navbar">
+            <div><img src="../Rueda Libre logo.png" alt="Ciclistas en Medellín" class="logo">
+                <h1 style="color: #fff;">Rueda-Libre </h1>
+            </div>
+            <ul class="nav-links">
 
-                <div class="mb-3">
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required placeholder="Correo@correo.com"><br><br>
-                </div>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Paginas2/reserva.html">Reservas</a></li>
+                <li><a href="../Paginas2/Rutas.html">Rutas</a></li>
+                <li><a href="#footer">Contacto</a></li>
+
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+<main>
+<div class="container mt-2">
+
+    <div class="row align-items-start g-4">
+      <!-- Bloque izquierdo, formulario y tabla  -->
+        <div class="col-lg-8">
+
+            
+            <div class="card shadow-sm p-4 mb-4">
+
+                <h2 class="mb-4 text-dark"
+                    style="font-family: 'Buenard', Arial, sans-serif;
+                    font-size: clamp(24px, 1.5vw, 36px);
+                    font-weight: bold;"
+                    font-color: #C70039;
+                    text-center;>
+                    <strong>RESERVA TU BICICLETA</strong>
+                </h2>
+
+                <form class="form">
+
+                    <div class="mb-3">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" class="form-control"
+                        required placeholder="Correo@correo.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fecha">Fecha de reserva:</label>
+                        <input type="date" id="fecha" name="fecha" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="hora">Hora de reserva:</label>
+                        <input type="time" id="hora" name="hora" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="bicicleta">Tipo de bicicleta:</label>
+                        <select id="bicicleta" name="bicicleta" class="form-select" required>
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="montaña">Montaña</option>
+                            <option value="urbana">Urbana</option>
+                            <option value="eléctrica">Eléctrica</option>
+                            <option value="niños">Niños</option>
+                            <option value="rural">Rural</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="mb-3">
+                        <legend class="fs-6">Descripción</legend>
+                        <textarea id="descripcion" name="descripcion" class="form-control"
+                        rows="4"
+                        placeholder="Si tiene algun detalle del alquiler, escríbalo aquí..."></textarea>
+                    </fieldset>
+
+                    <button  type="submit" class="btn btn-danger" style="background-color: #7b291d; border: none; padding: 15px 30px; font-size: 20px; font-weight: bold; ">Reservar</button>
+
+                </form>
+
+            </div>
+
+            
+                <div class="card shadow-sm p-4"; style="margin-bottom: 40px;">
+                    <h3 class="text-center mb-4 text-dark" style="font-family: 'Buenard', Arial, sans-serif; font-weight: bold; text-color: #C70039;">
+                        TABLA DE PRECIOS
+                    </h3>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped text-center align-middle">
+                            <thead class="text-white" style="background-color: #7b291d;">
+                                <tr>
+                                    <th>Tipo de bicicleta</th>
+                                    <th>Valor por hora</th>
+                                    <th>Valor equipo</th>
+                                    <th>Valor Tour Estadio</th>
+                                    <th>Valor Tour Medellín</th>
+                                    <th>Otros Tours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>NIÑOS</strong></td>
+                                    <td>$12.000</td>
+                                    <td>$2.000</td>
+                                    <td>$10.000</td>
+                                    <td>$15.000</td>
+                                    <td>$15.000</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ELÉCTRICA</strong></td>
+                                    <td>$25.000</td>
+                                    <td>$5.000</td>
+                                    <td>$8.000</td>
+                                    <td>$13.000</td>
+                                    <td>$15.000</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>MONTAÑA</strong></td>
+                                    <td>$18.000</td>
+                                    <td>$5.000</td>
+                                    <td>$15.000</td>
+                                    <td>$20.000</td>
+                                    <td>$15.000</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>RURAL</strong></td>
+                                    <td>$15.000</td>
+                                    <td>$5.000</td>
+                                    <td>$15.000</td>
+                                    <td>$20.000</td>
+                                    <td>$15.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                 
-        <label for="fecha">Fecha de reserva:</label>
-        <input type="date" id="fecha" name="fecha" required><br><br>
+                <div class="mt-3 text-muted small text-center">
+                    <em>Si alquilas un tour no pagarás el valor de la hora, el valor del equipo incluye: casco, codera, rodillera.</em>
+                </div>
+            </div>
 
-        <label for="hora">Hora de reserva:</label>
-        <input type="time" id="hora" name="hora" required><br><br>
+        </div> 
 
-        <label for="bicicleta">Tipo de bicicleta:</label>
-        <select id="bicicleta" name="bicicleta" required>
-            <option value="" disabled selected>Seleccione una opción</option>
-            <option value="montaña">Montaña</option>
-            <option value="urbana">Urbana</option>
-            <option value="eléctrica">Eléctrica</option>
-            <option value="niños">Niños</option>
-        </select><br><br>
 
-        <fieldset>
-            <legend> Descripción </legend>
-            <textarea id="descripcion" name="descripcion" rows="4" cols="40" placeholder="Si tiene algun detalle del alquiler, escríbalo aquí..."></textarea>
-        </fieldset>
+        <!-- vista de bicicletas-->
+        <div class="col-lg-4">
 
-        <input type="submit" value="Reservar">
-    </p>
-  </div>
+            <div class="card shadow-sm p-4">
+
+                <h2 class="mb-4 text-dark"
+                    style="font-family: 'Buenard', Arial, sans-serif;
+                    font-size: clamp(24px, 1.5vw, 36px);
+                    font-weight: bold;">
+                    <strong>Información de contacto</strong>
+                </h2>
+
+                <div class="overflow-hidden rounded">
+                    <img src="./Imagenes/Gemini_Generated_Image_snt0yssnt0yssnt0.jpeg"
+                    alt="Imagen de referencia" class="img-fluid w-100 object-fit-cover">
+                </div>
+
+            </div>
+
+        </div> 
+
+    </div>
+
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-
+</main>
 </body>
 
-<footer id="footer">
+<footer id="footer " class="footer" style="background-color: #7b291d; color: #fff; padding: 20px; text-align: center; justify-content: space-between;">
     <h2><strong>Contáctanos</strong></h2>
-<a href="https://wa.me/573000000000" target="_blank">Reserva por WhatsApp</a>
+    <a href="https://wa.me/573000000000" target="_blank">Reserva por WhatsApp</a>
+        <image src="./Imagenes/vector-whatsapp-logotipo-redes-sociales_1093524-447.avif" 
+        alt="WhatsApp" style="width: 60px; height: 60px; margin-left: 10px; margin-right: 40px;
+        border-radius: 10px; vertical-align: middle;"></image>
+
+    <a href="https://www.instagram.com/rueda_libre/" target="_blank" >Síguenos en Instagram</a>
+        <image src="./Imagenes/instagram.jpeg" alt="Instagram" style="width: 60px; height: 60px; margin-left: 10px;
+        border-radius: 10px; margin-right: 40px; vertical-align: middle; "></image>
+
+    <a href="https:tiktok.com/rueda_libre/" target="_blank"> Siguenos en Titok</a>
+        <image src="./Imagenes/Tiktok_icon.svg.webp" alt="Tiktok" style="width: 60px; height: 60px; margin-left: 10px;
+        border-radius: 10px; vertical-align: middle;"></image>
+
+
 </footer>
 </html>
 

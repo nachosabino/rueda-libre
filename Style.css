@@ -125,6 +125,7 @@
     justify-content: center;
     overflow: hidden;
     color: #F0F0F0;
+    z-index: -2000;
 
 
 }
@@ -197,64 +198,293 @@
       
 }
 
+.fondogris{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    z-index: -11000;
+}
+
 /*Segundo cuadro del scroll*/
 
 .contenido1{
-width: 100%;    
-display: flex;
-position: absolute;
-background-color:var(--background-color) ;
-border-radius: 5px;
-justify-content:space-between;
-align-items: center;
-top: 60vh;
-height: 90vh;
-margin-bottom: 1px;
-padding: 1px;
-z-index: -1;
+
+    width: 96%;    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 20px;
+    padding: 40px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(203, 199, 199);
+    border-radius: 10px;
+    box-shadow: 1px 6px 10px rgba(0,0,0,0.1);
+    margin-left: 2%;
+    text-align: center;
+
 }
 
 .CuadroInicial {
 
-    position: absolute;
-      z-index: -1;
-      align-content:space-between;
-      align-items:center ;
-      justify-content:space-between;
+    Border:1px solid var(--primary-color);
+    grid-column: 1 / 4;
+    grid-row: 1;
+    display: flex;
+    width: 170vh;
+    height: 20vh;
+    background-color: var(--background-color);
+    align-content:center;
+    align-items:center ;
+    justify-content:center;
+    color: var(--text-color);
+    
+}
 
+.CuadroIncial p {
+    text-decoration: underline
+}
+
+.contenido1 h2 {
+    font-family: var(--font-family);
+    font-size: clamp(50px, 8vw, 78px);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+.contenido1 p {
+    font-family: var(--font-family);
+    font-size: clamp(12px, 1.5vw, 18px);
+    color: rgb(91, 90, 90);
+    margin-top: 5px;
+}
+
+.cuadroincial1servicios {
+    grid-row: 2;
+    width: 175vh;
+    display: flex;
+    align-content:space-between;
+    align-items:center ;
+    justify-content:space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.alquilertxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+    Background-color: white;
+    Border: 1px solid var(--primary-color);
+    border-top: none;
+    border-end-start-radius: 20px ;
+    border-end-end-radius: 20px ;   
+}
+
+.alquilertxt h3 {
+    font-family: var(--font-family);
+    font-size: clamp(24px, 1.5vw, 36px);
+    color: var(--primary-color);
+    font-style: uppercase;
 }
 
 .Alquiler {
     display: flex;
     object-position: 0;
-    width: 25%;
+    width: 100%;
     height: auto;
-    border-radius: 3px;
+    border-start-end-radius: 20px;
+    border-start-start-radius: 20px;
+    border: 1px solid var(--primary-color);
+    border-bottom: none;
 }
 
 .Medellin {
-    display: flex;
-    width: 25%;
+   display: flex;
+    object-position: 0;
+    width: 100%;
     height: auto;
-    border-radius: 3px;
+    border-start-end-radius: 20px;
+    border-start-start-radius: 20px;
+    border: 1px solid var(--primary-color);
+    border-bottom: none;
 }
+
+.guiadostxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+    Background-color: white;
+    Border: 1px solid var(--primary-color);
+    border-top: none;
+    border-end-start-radius: 20px ;
+    border-end-end-radius: 20px ;   
+}
+
+.guiadostxt h3 {
+    font-family: var(--font-family);
+    font-size: clamp(24px, 1.5vw, 36px);
+    color: var(--primary-color);
+    font-style: uppercase;
+}
+
 
 .Taller {
     display: flex;
-    width: 25%;
+    object-position: 0;
+    width: 100%;
     height: auto;
-    border-radius: 3px;
+    border-start-end-radius: 20px;
+    border-start-start-radius: 20px;
+    border: 1px solid var(--primary-color);
+    border-bottom: none;
+}
+
+.tallertxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+    Background-color: white;
+    Border: 1px solid var(--primary-color);
+    border-top: none;
+    border-end-start-radius: 20px ;
+    border-end-end-radius: 20px ;   
+}
+
+.tallertxt h3 {
+    font-family: var(--font-family);
+    font-size: clamp(24px, 1.5vw, 36px);
+    color: var(--primary-color);
+    font-style: uppercase;
 }
 
 
 
-.footer{
+
+.Redes {
+    position: absolute;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    display: grid;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    z-index: -1;
+}
+
+
+.Tituredes {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+    
+}
+
+
+.tituloredes {
+    
+    grid-column: 3 fr;
+    grid-row: 1;
+    width: 100%;
+    align-content: center;
+    font-family: var(--font-family);
+    font-size: clamp(24px, 1.5vw, 36px);
+    color: var(--primary-color);
+    font-style: uppercase;
+    
+}
+
+.textoredes {
+    
+    grid-column: 3 fr;
+    width: 100%;
+    justify-content: center;
+    grid-row: 1;
+    align-content: center;
+    grid-row: 1;
+    font-family: var(--font-family);
+    font-size: clamp(24px, 1.5vw, 36px);
+    color: var(--primary-color);
+    font-style: uppercase;
+}
+
+
+
+
+
+
+.cuadroinstagram
+{
+    grid-column: 1 / 2;
+    grid-row: 3;
+    display: flex;
+    width: 50%;
+    height: auto;
+    border: 2px solid #de2f2f;
+    border-radius: 10px;
+    height: 60px;
+    z-index: -1;
+    object-position: 0;
+}
+
+
+
+.cuadrotiktok
+{
+    grid-column: 2 / 3;
+    grid-row: 3;
+    display: flex;
+    width: 50vh;
+    height: 50vh;
+    border: 2px solid #de2f2f;
+    border-radius: 10px;
+    height: 60px;
+    z-index: -1;
+}
+
+
+
+
+
+.encuesta {
+    position:fixed;
+    display: flex;
+    width: 50vh;
+    height: 50vh;
+    background-color: white;
+    align-content:center;
+    align-items:center ;
+    justify-content:center;
+    background-color: white;
+    Margin-bottom: 20px;
+
+}
+
+
+/*footer{
 width: 100%;    
 display: block ruby;
 position: absolute;
 background: #83301e;
 height: 300px;
-z-index: 1;
+z-index: 21;
 }
 
 .cuadrofooter{
@@ -262,4 +492,4 @@ z-index: 1;
     display: flex;
     background: #83301e;
     width: 100%; 
-    height: 300px; }
+    height: 300px; } */
